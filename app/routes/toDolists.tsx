@@ -16,17 +16,5 @@ export const toDoItems = [
             title : "ตกปลา",
             created : "2024-12-14 13:00:00",
             completed : true
-            },
-            {
-                id : 4,
-                title : "ปีนเขา",
-                created : "2024-12-14 15:10:00",
-                completed : true
-                },
-                {
-                    id : 5,
-                    title : "เตะบอล",
-                    created : "2024-12-14 17:30:00",
-                    completed : true
-                    }
+            }
 ];
