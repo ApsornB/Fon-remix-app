@@ -2,7 +2,7 @@ export default function MyFooter () {
     return (       
   <nav className="bg-white border-gray-200 dark:bg-gray-900">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://localhost:5173/" className="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="http://localhost:5174/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="public\caitlyn.jpg" className="h-8" title="Apsorn Logo" />
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Apsorn</span>
     </a>
