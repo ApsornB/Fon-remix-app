@@ -1,6 +1,6 @@
 import { toDoItems } from "./toDolists";
-import MyMenu from "./templates/mymenu";
-import MyFooter from "./templates/myfooter";
+import MyMenu from "./templates/MyMenu";
+import MyFooter from "./templates/MyFooter";
 import { useState } from "react";
 
 function CompletedCheck ({c} : {c:boolean}) {
