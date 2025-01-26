@@ -5,13 +5,13 @@ function MyBolgs(){
     let enabled = true;
     const pi = 2.14;
  
-    //alert("Title: "+title);
+   //alert("Title: "+title);
     console.log("Rating: "+rating);
- // arrow function
+   // arrow function
     const getRating = ()=> {
             return <span>&#11088;&#11088;&#11088;&#11088;&#11088;</span>
     }
-    const getRating2 = (r) => {
+    const getRating2 = (r: number) => {
      let msg = "";
      for(let i=0; i<r; i++) {
          msg+= '\u2b50';
@@ -44,9 +44,15 @@ function MyBolgs(){
      </div>
     );
  }
+            interface CommentProps {
+               avatar: string;
+               message: string;
+               author: string;
+               top: boolean;
+            }
              // {avatar,message,author} :
             // {avatar : any,message : any, author : any})
-             function Comment({avatar,message,author,top}) {
+             function Comment({ avatar, message, author, top}: CommentProps) {
               return (
                <div>
                  <GetTop top={top} />
@@ -60,7 +66,7 @@ function MyBolgs(){
                </div>
               );
              }
-                  function GetTop({top}) {
+                  function GetTop({top}: {top: boolean}) {
                      if(top)
                          return '\u2764';
                      return ' ';

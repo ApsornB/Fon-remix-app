@@ -25,9 +25,12 @@ function GetDetail() {
     <div className="m-0">
       <MyMenu />
       <div className="m-5">
-        <h1 className="text-xl font-bold p-2 mb-5 dark:text-white border-s-8 border-teal-600">
-          รายละเอียดข้อมูลที่ต้องการทำ
-        </h1>
+        <h1 className="text-xl font-bold p-2 mb-5 dark:text-white border-s-8 border-teal-600">รายละเอียดข้อมูลที่ต้องการทำ</h1>
+          <div className="flex flex-row justify-center">
+          รหัสข้อมูล: {todl_id}<br/>
+          รายละเอียดข้อมูลที่ต้องการทำ<br/>
+          </div>
+
         <div className="p-5 flex flex-row justify-start">
             {
                 tdItem.length === 0 ? ( 'ไม่พบข้อมูลกิจกรรมที่คุณเลือก!' ) :
