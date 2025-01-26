@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-// htpp://localhost:3000/toDoLists/u100
-app.get('/toDoLists/:userId', (req, res) => {
+// htpp://localhost:3000/toDoLists/u100/ORD100
+app.get('/toDoLists/:userId/:orderId', (req, res) => {
     let myData = "<h1>My Profile</h1>";
     myData+= "<strong>User ID:</strong>"+req.params.userId+"<br/>";
     myData+= "<strong>User ID:</strong>"+req.params.orderId+"<br/>";
