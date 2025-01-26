@@ -1,0 +1,24 @@
+import { useState } from "react";
+import MyMenu from "./templates/mymenu";
+import MyFooter from "./templates/myfooter";
+
+function Mycontact() {
+  // คุณสามารถเพิ่มตัวแปรหรือลอจิกที่จำเป็นที่นี่ เช่น การประกาศตัวแปร tid
+  //const tid = "12345"; // ตัวอย่างการกำหนดค่า
+
+  return (
+    <div className="m-0">
+      <MyMenu />
+      <div className="m-5">
+        <h1 className="text-xl font-bold p-2 mb-5 dark:text-white border-s-8 border-teal-600">ติดต่อฉัน</h1>
+          <div className="flex flex-row justify-center">
+            อัปสร พรหมมา<br/>
+            Apsorn Bhromma<br/>
+            </div>
+          </div>
+        <MyFooter />
+    </div>
+  );
+}
+
+export default Mycontact;
