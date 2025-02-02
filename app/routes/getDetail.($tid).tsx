@@ -10,7 +10,7 @@ function GetDetail() {
   const navigate = useNavigate();
 
   const tdItem = toDoItems.filter((item) =>
-          item.id == todl_id
+          item.id == Number(todl_id)
         );
 
         console.log(tdItem);
