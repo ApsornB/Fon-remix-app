@@ -1,3 +1,5 @@
+const formattedDateTime = new Date().toLocaleString("th-TH", { hour12: false });
+
 export const toDoItems = [
     {
     id : 1,
